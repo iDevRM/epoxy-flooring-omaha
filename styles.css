@@ -70,7 +70,7 @@ nav {
 /* ── HERO ── */
 .hero {
   background: linear-gradient(135deg, rgba(15,23,42,0.90) 0%, rgba(2,132,199,0.50) 100%),
-              var(--hero-bg, url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1400&q=80')) center/cover no-repeat;
+              var(--hero-bg, url('https://images.pexels.com/photos/36230779/pexels-photo-36230779.jpeg?auto=compress&cs=tinysrgb&w=1400')) center/cover no-repeat;
   min-height: 560px; display: flex; align-items: center; padding: 80px 5%;
 }
 .hero-content { max-width: 680px; }
@@ -154,7 +154,7 @@ footer nav a { color: rgba(255,255,255,0.45); font-size: 14px; padding: 6px 12px
 footer nav a:hover { color: var(--white); background: rgba(255,255,255,0.08); }
 
 /* ── PAGE HEADER ── */
-.page-header { background: linear-gradient(135deg, rgba(15,23,42,0.92) 0%, rgba(2,132,199,0.55) 100%), var(--hero-bg, url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1400&q=80')) center/cover no-repeat; padding: 72px 5%; text-align: center; }
+.page-header { background: linear-gradient(135deg, rgba(15,23,42,0.92) 0%, rgba(2,132,199,0.55) 100%), var(--hero-bg, url('https://images.pexels.com/photos/36230779/pexels-photo-36230779.jpeg?auto=compress&cs=tinysrgb&w=1400')) center/cover no-repeat; padding: 72px 5%; text-align: center; }
 .page-header h1 { color: var(--white); font-size: 40px; margin-bottom: 12px; font-weight: 900; letter-spacing: -0.8px; }
 .page-header p { color: rgba(255,255,255,0.78); font-size: 18px; }
 
