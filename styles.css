@@ -270,3 +270,11 @@ footer nav a:hover { color: var(--white); background: rgba(255,255,255,0.08); }
   .photo-item--wide { grid-column: span 1; aspect-ratio: 4 / 3; }
   .ba-label { padding: 13px 14px 15px; }
 }
+
+/* ── Inline photo row (service pages) ── */
+.photo-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 30px; }
+.photo-row--two { grid-template-columns: repeat(2, 1fr); }
+.photo-row > .photo-item { aspect-ratio: 4 / 3; }
+@media (max-width: 760px) {
+  .photo-row, .photo-row--two { grid-template-columns: 1fr; }
+}
