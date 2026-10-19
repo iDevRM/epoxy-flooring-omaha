@@ -278,3 +278,50 @@ footer nav a:hover { color: var(--white); background: rgba(255,255,255,0.08); }
 @media (max-width: 760px) {
   .photo-row, .photo-row--two { grid-template-columns: 1fr; }
 }
+
+
+/* =================================
+   HERO QUOTE FORM / LOCATION MAP / FOOTER SITE MAP
+   ================================= */
+
+/* ── Hero quote form ── */
+.hero-inner { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 440px); gap: 48px; align-items: center; width: 100%; max-width: 1240px; margin: 0 auto; }
+.hero-form { background: var(--white); border-radius: 16px; padding: 28px 28px 22px; border-top: 4px solid var(--primary); box-shadow: 0 24px 60px rgba(2,6,23,0.45); }
+.hero-form .hero-form-title { font-size: 22px; font-weight: 800; color: var(--dark); letter-spacing: -0.4px; line-height: 1.25; margin-bottom: 6px; }
+.hero .hero-form p { color: var(--muted); font-size: 14px; line-height: 1.5; margin-bottom: 18px; }
+.hero-form .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.hero-form form .form-group { margin-bottom: 12px; }
+.hero-form form input, .hero-form form select { padding: 11px 14px; }
+.hero-form .h-captcha { margin: 2px 0 6px; min-height: 78px; }
+.hero-form form button { margin-top: 4px; }
+.hero .hero-form .hero-form-note { font-size: 12px; text-align: center; margin: 10px 0 0; }
+
+/* ── Location map (home page) ── */
+.location-address { font-size: 17px; font-weight: 600; color: var(--dark); margin-bottom: 14px; }
+.location-note { max-width: 760px; padding: 14px 18px; margin-bottom: 26px; background: var(--light); border-left: 4px solid var(--primary); border-radius: 8px; font-size: 14px; color: var(--muted); line-height: 1.6; }
+.location-note strong { color: var(--dark); }
+.location-note a { color: var(--primary-dark); font-weight: 700; }
+.map-embed { max-width: 1040px; border-radius: var(--radius); overflow: hidden; box-shadow: 0 6px 24px rgba(15,23,42,0.10); }
+
+/* ── Footer site map ── */
+.footer-sitemap { max-width: 1000px; margin: 30px auto 0; padding-top: 28px; border-top: 1px solid rgba(255,255,255,0.08); text-align: left; }
+footer .footer-sitemap-title { color: var(--white); font-size: 13px; font-weight: 800; text-transform: uppercase; letter-spacing: 1.4px; text-align: center; margin: 0 0 20px; }
+.footer-sitemap-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 28px; }
+footer .footer-col-title { color: var(--primary); font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin: 0 0 10px; }
+.footer-sitemap ul { list-style: none; }
+.footer-sitemap li { margin-bottom: 7px; font-size: 14px; }
+.footer-sitemap a { color: rgba(255,255,255,0.62); transition: color 0.2s; }
+.footer-sitemap a:hover { color: var(--white); }
+.footer-sitemap address { font-style: normal; font-size: 14px; line-height: 1.75; color: rgba(255,255,255,0.62); }
+
+@media (max-width: 960px) {
+  .hero-inner { grid-template-columns: 1fr; gap: 36px; }
+  .hero-form { max-width: 560px; }
+  .footer-sitemap-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 480px) {
+  .hero-form { padding: 22px 18px 18px; }
+  .hero-form .form-row { grid-template-columns: 1fr; gap: 0; }
+  .hero-form .h-captcha { transform: scale(0.86); transform-origin: 0 0; }
+  .footer-sitemap-grid { grid-template-columns: 1fr; gap: 22px; }
+}
